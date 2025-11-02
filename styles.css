@@ -1,0 +1,28 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+    align-items: center;
+}
+
+#search {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    align-content: center;
+}
+
+#results {
+    list-style-type: none;
+    padding: 0;
+    width: 300px;
+}
+
+#results li {
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    cursor: pointer; /* Indicate clickable items */
+    color: blue; /* Optional: change color for links */
+}
