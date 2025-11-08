@@ -1,15 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Search with Download Links</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda</title>
+  <link rel="stylesheet" href="UTS_namaMhs.css">
 </head>
 <body>
-    <input type="text" id="search" placeholder="Search..." />
-    <ul id="results"></ul>
+  <header>
+    <button id="toggleSidebar" class="toggle-button">☰</button>
+  
+    <h1>Website Sederhana</h1>
+  
+    <p>Contoh desain mockup dengan HTML dan CSS</p>
+  
+    <!-- Search bar -->
+    <div class="search-container" aria-label="Cari halaman">
+      <input type="text" id="searchInput" class="search-input" placeholder="Cari halaman...">
+      <ul id="searchResults" class="search-results" role="listbox" aria-label="Hasil pencarian" hidden></ul>
+    </div>
+  </header>
+  <div class="container">
+    <nav class="sidebar" id="sidebar">
+      <a href="index.html" class="active">Beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
 
-    <script src="script.js"></script>
+    <main class="main-content">
+      <section class="hero">
+        <h1>Selamat Datang!</h1>
+        <p>Bangun website sederhana yang menarik dan responsif hanya dengan HTML & CSS.</p>
+      </section>
+
+      <section class="content">
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2025 Website Sederhana. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
