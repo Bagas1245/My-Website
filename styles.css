@@ -1,28 +1,48 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    background-color: aquamarine;
-    align-items: center;
+/* Search bar container khusus header (tetap konsisten) */
+.search-container {
+  position: relative;
+  margin: 12px auto 0;
+  width: min(720px, 90%);
 }
 
-#search {
-    width: 500px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    align-content: center;
+.search-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
 }
 
-#results {
-    list-style-type: none;
-    padding: 0;
-    width: 300px;
+.search-input:focus {
+  border-color: #2a9d8f;
+  box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.15);
 }
 
-#results li {
-    padding: 5px;
-    border: 1px solid #ddd;
-    margin-top: 5px;
-    cursor: pointer; /* Indicate clickable items */
-    color: blue; /* Optional: change color for links */
+.search-results {
+  list-style: none;
+  padding: 6px;
+  margin: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: white;
+  max-height: 240px;
+  overflow-y: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.search-results li {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.search-results li:hover,
+.search-results li.active {
+  background-color: #f1f5f9;
+}
+.search-results[hidden] {
+  display: none;
 }
